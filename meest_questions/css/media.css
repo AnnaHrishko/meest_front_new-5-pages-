@@ -25,6 +25,13 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .meest_questions .bread_crumbs {
+    display: none;
+  }
+  .meest_questions .on_index_link {
+    display: flex;
+    margin-bottom: 10px;
+  }
   .name_page {
     font-size: 22px;
   }
@@ -38,6 +45,9 @@
   .faq_wrap .title_faq_wrap {
     font-size: 20px;
     margin-bottom: 15px;
+  }
+  .faq_wrap .accordion_sec {
+    margin-bottom: 5px;
   }
   .faq_wrap .accordion_sec .name_sec {
     padding: 19px 20px;

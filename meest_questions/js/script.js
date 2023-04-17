@@ -1,4 +1,4 @@
- $('.content').hide().eq(0).show();
+ $('.content').hide();
   $('.accordion_sec').click(function() {
     $('.accordion_sec').removeClass('active')
     $(this).addClass('active')

@@ -25,12 +25,18 @@
   .navigations_menu_page .item_menu_navigations a {
     font-size: 13px;
   }
+  .navigations_menu_page::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+  }
 }
-.navigations_menu_page::-webkit-scrollbar {
-  display: none; /* Safari and Chrome */
-}
-
 @media screen and (max-width: 991px) {
+  .top_wrap_inner .bread_crumbs {
+    display: none;
+  }
+  .top_wrap_inner .on_index_link {
+    display: flex;
+    margin-bottom: 10px;
+  }
   .name_page {
     font-size: 22px;
   }

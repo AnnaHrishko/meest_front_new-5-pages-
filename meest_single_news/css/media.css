@@ -1,0 +1,107 @@
+@media screen and (max-width: 1290px) {
+  .top_single_news_inner {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .top_single_news_inner {
+    display: block;
+    padding: 20px 0 25px;
+  }
+  .top_single_news_inner .img_single_news {
+    width: calc(100% + 30px);
+    margin-left: -15px;
+    margin-bottom: 10px;
+  }
+  .top_single_news_inner .img_single_news img {
+    border-radius: unset;
+  }
+  .top_single_news_inner .text_single_news {
+    width: 100%;
+    margin-left: 0;
+  }
+  .top_single_news_inner .text_single_news .heading_single_news {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .top_single_news .bread_crumbs {
+    display: none;
+  }
+  .top_single_news .on_index_link {
+    display: flex;
+  }
+  .category_line {
+    margin-bottom: 20px;
+  }
+  .soc_media_wraper .soc_media {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+  }
+  .soc_media_wraper .soc_media img {
+    width: 20px;
+    height: 20px;
+  }
+  .soc_media_wraper span {
+    font-size: 13px;
+  }
+  .single_news_wraper {
+    padding: 30px 0;
+    width: 100%;
+  }
+  .single_news_wraper h2 {
+    font-size: 15px;
+    line-height: 150%;
+  }
+  .single_news_wraper p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .single_news_wraper h3 {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .single_news_wraper blockquote {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .single_news_wraper blockquote:before {
+    width: 5px;
+  }
+  .single_news_wraper blockquote p {
+    font-size: 13px;
+    line-height: 20px;
+    width: 100%;
+  }
+  .swiper-scrollbar {
+    display: block !important;
+    background: #DEEBF5 !important;
+  }
+  .swiper-buttons {
+    display: none !important;
+  }
+  .our_news_wraper {
+    padding-bottom: 20px;
+  }
+  .swiper-scrollbar-drag {
+    background: #0061AF !important;
+    border-radius: 8px !important;
+    width: 130px !important;
+  }
+  .news_row .img_news_row {
+    margin-bottom: 10px;
+  }
+  .news_row .info_news_row .title_news_row {
+    margin-bottom: 5px;
+  }
+  .news_row .info_news_row .descr {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .news_row .category_line {
+    margin-bottom: 10px;
+  }
+  .top_our_news .title_our_news {
+    font-size: 20px;
+  }
+}

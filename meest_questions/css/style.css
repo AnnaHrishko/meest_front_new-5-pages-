@@ -132,6 +132,7 @@ body {
   border: 1px solid #C8DAEC;
   border-radius: 8px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 .faq_wrap .accordion_sec.active .name_sec {
   border-bottom: 1px solid #C8DAEC;
@@ -165,4 +166,23 @@ body {
   line-height: 25px;
   letter-spacing: 0.02em;
   color: #606B77;
+}
+
+.on_index_link {
+  display: none;
+  text-decoration: none;
+  align-items: center;
+}
+.on_index_link h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 109%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #2361A9;
+  margin-left: 10px;
+}
+.on_index_link img {
+  width: 8px;
+  height: 8px;
 }

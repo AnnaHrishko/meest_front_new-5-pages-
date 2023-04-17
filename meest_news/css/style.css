@@ -122,6 +122,25 @@ body {
   text-decoration: none;
 }
 
+.on_index_link {
+  display: none;
+  text-decoration: none;
+  align-items: center;
+}
+.on_index_link h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 109%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #2361A9;
+  margin-left: 10px;
+}
+.on_index_link img {
+  width: 8px;
+  height: 8px;
+}
+
 .top_wrap_inner .name_page {
   margin-bottom: 27px;
 }

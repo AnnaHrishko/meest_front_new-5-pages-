@@ -1,0 +1,133 @@
+@media screen and (max-width: 1290px) {
+  .sec_intrn_shipment .text_intrn_shipment .small_text {
+    width: 100%;
+  }
+  .sec_intrn_shipment.first {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .service_offers_row {
+    width: calc(50% - 35px);
+  }
+}
+@media screen and (max-width: 991px) {
+  .on_index_link {
+    display: flex;
+  }
+  .sec_intrn_shipment {
+    flex-direction: column;
+  }
+  .sec_intrn_shipment .text_intrn_shipment {
+    width: 100%;
+    position: relative;
+    margin-top: -40px;
+    padding: 20px 40px 40px 25px;
+  }
+  .sec_intrn_shipment .text_intrn_shipment .title {
+    font-size: 17px;
+    line-height: 140%;
+    margin-bottom: 10px;
+  }
+  .sec_intrn_shipment .text_intrn_shipment .descr {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 0px;
+  }
+  .sec_intrn_shipment .text_intrn_shipment .blue_button {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+  }
+  .sec_intrn_shipment.first {
+    flex-direction: column-reverse;
+  }
+  .sec_intrn_shipment.first .img_intrn_shipment {
+    width: 100%;
+    margin-left: 0;
+  }
+  .sec_intrn_shipment.first .text_intrn_shipment {
+    padding: 20px 40px 40px 25px;
+  }
+  .sec_intrn_shipment.second {
+    padding: 40px 0 70px;
+  }
+  .sec_intrn_shipment.second .text_intrn_shipment {
+    background: #FFFFFF;
+    border-radius: 30px;
+  }
+  .sec_intrn_shipment.second .img_intrn_shipment {
+    width: 100%;
+    margin-right: 0;
+  }
+  .blue_button {
+    padding: 15px 20px;
+  }
+  .blue_button span {
+    font-size: 13px;
+  }
+  .blue_button.after_link::after {
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+  .sec2_intrn_shipment {
+    background-color: #DEEBF5;
+  }
+  .service_offers_row {
+    width: 100%;
+    margin-left: 0;
+    overflow: unset;
+    margin-right: 15px;
+    flex: 0 0 auto;
+  }
+  .service_offers_row .text_row_service .title_service {
+    font-size: 15px;
+  }
+  .service_offers_row .text_row_service .descr_serv {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .service_offers_wrap {
+    display: flex;
+    flex-flow: unset;
+    flex-wrap: unset;
+    width: 100%;
+    max-width: 991px;
+    margin-left: 0;
+    overflow-x: scroll;
+    row-gap: unset;
+    padding-bottom: 20px;
+    scrollbar-color: #0061AF #fff;
+  }
+  .service_offers_wrap::-webkit-scrollbar-track {
+    background-color: #0061AF;
+  }
+  .service_offers_wrap::-webkit-scrollbar {
+    width: 100%;
+  }
+  .service_offers_wrap::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    box-shadow: unset;
+    background-color: #fff;
+  }
+  .service_offers_wrap::-webkit-scrollbar-thumb:hover {
+    background: #fff;
+  }
+  .service_offers_sec {
+    padding: 40px 0;
+  }
+  .service_offers_sec .heading_sec {
+    font-size: 20px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sec_intrn_shipment {
+    flex-direction: column;
+  }
+  .sec_intrn_shipment .text_intrn_shipment {
+    margin-top: -30px;
+  }
+}

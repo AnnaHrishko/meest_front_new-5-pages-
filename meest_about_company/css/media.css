@@ -9,6 +9,57 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .swiper-scrollbar {
+    display: block !important;
+    background: #DEEBF5 !important;
+  }
+  .swiper-buttons {
+    display: none !important;
+  }
+  .our_news_wraper {
+    padding-bottom: 20px;
+  }
+  .swiper-scrollbar-drag {
+    background: #0061AF !important;
+    border-radius: 8px !important;
+    width: 130px !important;
+  }
+  .news_row .img_news_row {
+    margin-bottom: 10px;
+  }
+  .news_row .info_news_row .title_news_row {
+    margin-bottom: 5px;
+  }
+  .news_row .info_news_row .descr {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .news_row .category_line {
+    margin-bottom: 10px;
+  }
+  .top_our_news .title_our_news {
+    font-size: 20px;
+  }
+  .our_news_sec .blue_button {
+    display: inline-block;
+  }
+  .our_news_sec .top_our_news .blue_button {
+    display: none;
+  }
+  .blue_button {
+    padding: 15px 20px;
+  }
+  .blue_button span {
+    font-size: 13px;
+  }
+  .blue_button.after_link::after {
+    background-size: 15px 15px;
+    width: 15px;
+    height: 15px;
+  }
+  .about_meest_sec_main .on_index_link {
+    display: flex;
+  }
   .about_meest_sec1 {
     width: calc(100% + 30px);
     margin-left: -15px;

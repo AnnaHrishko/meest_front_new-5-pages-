@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Montserrat";
+  background: #f8f9fa;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1388px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.ai {
+  align-items: center;
+}
+
+.jc {
+  justify-content: space-between;
+}
+
+.bcg_light_blue {
+  background: #DEEBF5;
+}
+
+.about_meest_sec1 {
+  background: #DEEBF5;
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 80px;
+}
+.about_meest_sec1 .img_mobile {
+  display: none;
+}
+.about_meest_sec1 .img_mobile img {
+  width: 100%;
+  margin-top: auto;
+}
+.about_meest_sec1:after {
+  content: "";
+  background-image: url(../img/about_meest_img1.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: contain;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 100%;
+}
+.about_meest_sec1 .text_about_meest {
+  width: 41%;
+  padding: 75px 60px 65px;
+}
+.about_meest_sec1 .text_about_meest .title_about_meest {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #0061AF;
+  margin-bottom: 15px;
+}
+.about_meest_sec1 .text_about_meest p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #0061AF;
+  margin-bottom: 20px;
+}
+.about_meest_sec1 .text_about_meest p:last-of-type {
+  margin-bottom: 0;
+}
+
+.sec_flex_about_meest.first {
+  background: #DEEBF5;
+  padding: 40px 0;
+}
+
+.sec_flex_about_meest_inner {
+  display: flex;
+  align-items: center;
+}
+.sec_flex_about_meest_inner .text_part {
+  width: 45%;
+}
+.sec_flex_about_meest_inner .text_part h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #0061AF;
+  margin-bottom: 17px;
+}
+.sec_flex_about_meest_inner .text_part p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  color: #0061AF;
+}
+.sec_flex_about_meest_inner .img_sec_flex_about_meest {
+  width: calc(55% - 110px);
+  margin-left: 110px;
+}
+.sec_flex_about_meest_inner .img_sec_flex_about_meest img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.sec_flex_about_meest.second {
+  background: #fff;
+}
+.sec_flex_about_meest.second .sec_flex_about_meest_inner {
+  padding: 40px 0 65px;
+}
+.sec_flex_about_meest.second .sec_flex_about_meest_inner .text_part p {
+  margin-bottom: 20px;
+}
+.sec_flex_about_meest.second .sec_flex_about_meest_inner .text_part p:last-of-type {
+  margin-bottom: 0;
+}

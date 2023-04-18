@@ -1,8 +1,9 @@
  $('.content').hide();
   $('.accordion_sec').click(function() {
-    $('.accordion_sec').removeClass('active')
-    $(this).addClass('active')
-    $(".content").slideUp();
-    $(this).find('.content').slideDown();
+    $(this).toggleClass('active')
+    $('.accordion_sec').not(this).removeClass('active')
+    $('.accordion_sec').not(this).find('.content').slideUp()
+    $(this).find('.content').slideToggle()
     return false;
   });
+

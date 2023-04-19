@@ -2,6 +2,9 @@
   .navigations_menu_page .item_menu_navigations {
     margin-right: 20px;
   }
+  .navigations_menu_page .item_menu_navigations:after {
+    top: 160%;
+  }
   .navigations_menu_page .item_menu_navigations a {
     font-size: 14px;
   }

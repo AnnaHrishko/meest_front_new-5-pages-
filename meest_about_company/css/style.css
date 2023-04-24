@@ -43,6 +43,7 @@ body {
 }
 .about_meest_sec1 .img_mobile img {
   width: 100%;
+  vertical-align: bottom;
   margin-top: auto;
 }
 .about_meest_sec1:after {
@@ -309,6 +310,16 @@ body {
 }
 .our_news_sec .center_div {
   margin-top: 20px;
+}
+.our_news_sec .center_div .blue_button {
+  display: none;
+}
+
+.our_news_sec.about_meest {
+  margin-bottom: 55px;
+}
+.our_news_sec.about_meest .flex_button .blue_button {
+  display: block;
 }
 
 .center_div {

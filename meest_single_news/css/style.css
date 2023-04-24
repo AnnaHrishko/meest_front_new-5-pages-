@@ -102,10 +102,20 @@ body {
   margin-left: 10px;
 }
 
+.our_news_sec.single_news .center_div {
+  display: none;
+  margin-bottom: 40px;
+}
+
+.center_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .top_single_news_inner {
   width: 80%;
   display: flex;
-  align-items: center;
   padding: 0px 0 40px;
 }
 .top_single_news_inner .heading_single_news {

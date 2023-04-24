@@ -104,4 +104,10 @@
   .top_our_news .title_our_news {
     font-size: 20px;
   }
+  .our_news_sec.single_news .our_news_wraper {
+    margin-bottom: 20px;
+  }
+  .our_news_sec.single_news .center_div {
+    display: flex;
+  }
 }

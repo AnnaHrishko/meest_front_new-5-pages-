@@ -2,13 +2,23 @@
   .sec_intrn_shipment .text_intrn_shipment .small_text {
     width: 100%;
   }
-  .sec_intrn_shipment.first {
-    padding: 20px 0;
+  .sec_intrn_shipment.first .text_intrn_shipment {
+    margin: 20px 0;
+  }
+  .sec_intrn_shipment.third_page .text_intrn_shipment {
+    margin: 15px 0 40px;
   }
 }
 @media screen and (max-width: 1150px) {
   .service_offers_row {
     width: calc(50% - 35px);
+  }
+  .sec_intrn_shipment.third_page .text_intrn_shipment {
+    margin: 0;
+  }
+  .sec_intrn_shipment.second .img_intrn_shipment {
+    width: calc(55% - 20px);
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -47,6 +57,7 @@
     margin-left: 0;
   }
   .sec_intrn_shipment.first .text_intrn_shipment {
+    margin: 0;
     padding: 20px 40px 40px 25px;
   }
   .sec_intrn_shipment.second {
@@ -55,6 +66,7 @@
   .sec_intrn_shipment.second .text_intrn_shipment {
     background: #FFFFFF;
     border-radius: 30px;
+    margin: 0;
   }
   .sec_intrn_shipment.second .img_intrn_shipment {
     width: 100%;
@@ -121,6 +133,15 @@
     font-size: 20px;
     line-height: 120%;
     margin-bottom: 20px;
+  }
+  .sec_intrn_shipment.third_page .text_intrn_shipment {
+    margin: 0;
+  }
+  .sec_intrn_shipment.third_page .img_intrn_shipment {
+    position: unset;
+    bottom: unset;
+    right: unset;
+    width: calc(100% + 30px);
   }
 }
 @media screen and (max-width: 450px) {

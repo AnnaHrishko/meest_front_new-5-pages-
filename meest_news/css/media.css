@@ -2,6 +2,9 @@
   .navigations_menu_page .item_menu_navigations {
     margin-right: 20px;
   }
+  .navigations_menu_page .item_menu_navigations:after {
+    top: 160%;
+  }
   .navigations_menu_page .item_menu_navigations a {
     font-size: 14px;
   }
@@ -60,5 +63,10 @@
   }
   .all_news_sec .center_div {
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .news_row .img_news_row {
+    height: 30vh;
   }
 }

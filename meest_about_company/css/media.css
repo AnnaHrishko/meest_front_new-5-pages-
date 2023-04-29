@@ -9,6 +9,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .our_news_swiper .news_row .img_news_row {
+    height: 40vh;
+  }
   .swiper-scrollbar {
     display: block !important;
     background: #DEEBF5 !important;
@@ -130,6 +133,11 @@
   }
   .sec_flex_about_meest.second .sec_flex_about_meest_inner {
     padding: 30px 0 40px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .our_news_swiper .news_row .img_news_row {
+    height: 30vh;
   }
 }
 @media screen and (max-width: 350px) {

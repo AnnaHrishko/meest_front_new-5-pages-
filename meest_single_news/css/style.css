@@ -239,26 +239,29 @@ body {
   margin-bottom: 30px;
 }
 
-.news_row .img_news_row {
+.our_news_swiper .news_row .img_news_row {
   display: block;
   margin-bottom: 21px;
+  height: 30vh;
 }
-.news_row .img_news_row img {
+.our_news_swiper .news_row .img_news_row img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   border-radius: 10px;
 }
-.news_row .info_news_row .title_news_row {
+.our_news_swiper .news_row .info_news_row .title_news_row {
   margin-bottom: 6px;
   display: block;
   text-decoration: none;
 }
-.news_row .info_news_row .title_news_row h3 {
+.our_news_swiper .news_row .info_news_row .title_news_row h3 {
   font-weight: 700;
   font-size: 15px;
   line-height: 160%;
   color: #2361A9;
 }
-.news_row .info_news_row .descr {
+.our_news_swiper .news_row .info_news_row .descr {
   font-weight: 500;
   font-size: 15px;
   line-height: 25px;

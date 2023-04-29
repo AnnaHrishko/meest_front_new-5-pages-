@@ -4,6 +4,9 @@
   }
 }
 @media screen and (max-width: 991px) {
+  .our_news_swiper .news_row .img_news_row {
+    height: 40vh;
+  }
   .top_single_news_inner {
     display: block;
     padding: 20px 0 25px;
@@ -109,5 +112,10 @@
   }
   .our_news_sec.single_news .center_div {
     display: flex;
+  }
+}
+@media screen and (max-width: 500px) {
+  .our_news_swiper .news_row .img_news_row {
+    height: 30vh;
   }
 }

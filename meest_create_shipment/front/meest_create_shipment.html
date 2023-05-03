@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css">
-	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.14.0/jquery.timepicker.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
 	<link rel="stylesheet" href="css/media.css">
 </head>
@@ -20,11 +20,11 @@
 				</li>
 				<li>Відстежити посилку</li>
 			</ul>
+			<a href="#" class="on_index_link">
+				<img src="img/arrow_slider.svg" alt="">
+				<h3>Головна</h3>
+			</a>
 		</div>
-		<a href="#" class="on_index_link">
-			<img src="img/arrow_slider.svg" alt="">
-			<h3>Головна</h3>
-		</a>
 		<div class="container_custom">
 			<div class="meest_create_shipment">
 				<div class="flex_name_wrap">
@@ -160,38 +160,41 @@
 											</div>
 										</div>
 									</div>
+									<input type="checkbox" name="mandatory_payment" class="mandatory_payment" id="mandatory_payment">
 									<div class="postpaid_wrap">
 										<div class="switch_row">
-											<label class="switch">
-		  										<input type="checkbox" name="mandatory_payment">
+											<label for="mandatory_payment" class="switch">
+		  										
 		  										<span class="slider round"></span>
 											</label>
 											<h3>Післяплата</h3>
 										</div>
 										<span class="descr_postpaid">Сума, котру отримувач зобов’язується оплатити при одержанні <br>посилки. Кошти переводяться на банківську картку*</span>
 									</div>
-									<div class="form-flex-wrap  d-flex">
-										<div class="form-flex card_details d-flex ai">
-											<div class="form-row">
-												<label for="" class="label">Ім’я та прізвище власника картки</label>
-												<input type="text" class="input" name="name_lastname" placeholder="Ім'я та прізвище" autocomplete="off">
-											</div>
-											<div class="grid_columns2 d-flex">
-												<div class="form-row credit_card">
-													<label for="" class="label">№ картки для повернення</label>
-													<input type="text" name="account_number" class="input account_number" autocomplete="off" placeholder="0000-0000-0000-0000" >
+									<div class="postpaid_info_wrap">
+										<div class="form-flex-wrap  d-flex">
+											<div class="form-flex card_details d-flex ai">
+												<div class="form-row">
+													<label for="" class="label">Ім’я та прізвище власника картки</label>
+													<input type="text" class="input" name="name_lastname" placeholder="Ім'я та прізвище" autocomplete="off">
 												</div>
-												<div class="form-row postpaid_amount">
-													<label for="" class="label">Сума післяплати</label>
-													<input type="text" class="input" name="postpaid_amount" placeholder="0" autocomplete="off">
-													<div class="price_currency">UAH</div>
+												<div class="grid_columns2 d-flex">
+													<div class="form-row credit_card">
+														<label for="" class="label">№ картки для повернення</label>
+														<input type="text" name="account_number" class="input account_number" autocomplete="off" placeholder="0000-0000-0000-0000" >
+													</div>
+													<div class="form-row postpaid_amount">
+														<label for="" class="label">Сума післяплати</label>
+														<input type="text" class="input" name="postpaid_amount" placeholder="0" autocomplete="off">
+														<div class="price_currency">UAH</div>
+													</div>
 												</div>
 											</div>
 										</div>
-									</div>
-									<div class="notes_wrap form-row">
-										<label for="" class="label">Ім’я та прізвище власника картки</label>
-										<textarea name="" class="" id="" cols="30" rows="10" placeholder="Примітки"></textarea>
+										<div class="notes_wrap form-row">
+											<label for="" class="label">Ім’я та прізвище власника картки</label>
+											<textarea name="" class="" id="" cols="30" rows="10" placeholder="Примітки"></textarea>
+										</div>
 									</div>
 									<div class="bottom_part_form">
 										<p>* Дана форма не передбачає можливості виклику кур’єра за адресою. При потребі виклику кур’єра скористайтесь послугою <a href="">Виклик кур’єра</a> в додатку Meest ПОШТА або заповніть онлайн-форму на сайті*</p>
@@ -273,7 +276,7 @@
 										<input class="check-input delivery_department" type="radio" id="checkbox26" name="delivery_method">
 										<input class="check-input delivery_on_address" type="radio" id="checkbox27" name="delivery_method">
 										<input class="check-input courier_delivery" type="radio" id="checkbox28" name="delivery_method">
-										<div class="delivery_method_flex d-flex jc">
+										<div class="delivery_method_flex d-flex">
 											<div class="delivery_method_object" id="delivery_department">
 												<label for="checkbox26" class="delivery_method">
 													<span class="false-radio"></span>
@@ -345,7 +348,7 @@
 												</div>
 												<div class="form-row floor">
 													<label for="" class="label">Поверх</label>
-													<input type="text" class="input phone2" placeholder="" name="floor" autocomplete="off">
+													<input type="text" class="input phone2" placeholder="Поверх" name="floor" autocomplete="off">
 												</div>
 											</div>
 											<div class="form-flex-wrap  d-flex">
@@ -387,8 +390,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+<script src="http://igorescobar.github.io/jQuery-Mask-Plugin/js/jquery.mask.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/4.0.9/jquery.inputmask.bundle.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-timepicker/1.14.0/jquery.timepicker.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
 <script src="js/script.js"></script>

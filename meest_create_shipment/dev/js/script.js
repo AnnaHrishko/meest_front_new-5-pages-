@@ -39,10 +39,11 @@ $(document).on('input', '.quantity_input input', function() {
 //   $(this).parents('form').valid()
 // })
 
-$(document).ready(function(){
-  $('.account_number').inputmask("9999-9999-9999-9999"); //mask with dynamic syntax
-});
+// $(document).ready(function(){
+//   $('.account_number').inputmask("9999-9999-9999-9999"); //mask with dynamic syntax
+// });
 
+$('.account_number').mask('0000 0000 0000 0000');
 
 
 $(function() {
@@ -107,13 +108,12 @@ $(function() {
             },
             "account_number": {
                 required: true,
+                minlength: 19,
             },
             "postpaid_amount": {
                 required: true,
+                number: true,
             },
-            "mandatory_payment":{
-                required: true,
-            }
         },
         messages: {
             "number_loads": {
@@ -168,13 +168,12 @@ $(function() {
             },
             "account_number": {
                 required: "Required field",
+                minlength: "Please enter at least 16 characters."
             },
             "postpaid_amount": {
                 required: "Required field",
+                number: "Enter only number",
             }, 
-            "mandatory_payment":{
-                required: "Required field",
-            }
         },
     });
 });
@@ -356,7 +355,7 @@ $(document).ready(function(){
 $(document).ready(function(){
     if ($(".timepicker").length){
         $('.timepicker').timepicker({
-            timeFormat: 'h:mm p',
+            timeFormat: 'h:mm',
             interval: 60,
             minTime: '1:00am',
             maxTime: '12:00pm',
@@ -365,9 +364,7 @@ $(document).ready(function(){
             dynamic: false,
             dropdown: true,
             scrollbar: true,
-        }).change(function() {
-         $(this).valid();  // triggers the validation test        
-   });
+        })
     }
 })
 

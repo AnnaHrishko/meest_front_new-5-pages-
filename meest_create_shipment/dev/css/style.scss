@@ -538,15 +538,25 @@ body{
   }
 }
 
-.switch_row input:checked ~ .slider {
+.mandatory_payment{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.mandatory_payment:checked ~ .postpaid_wrap .switch_row .switch .slider {
   background-color: #0061AF;
 }
 
-.switch_row input:focus ~ .slider {
+.mandatory_payment:checked ~ .postpaid_info_wrap{
+  display: none;
+}
+
+.mandatory_payment:focus ~ .postpaid_wrap .switch_row .switch .slider {
   box-shadow: 0 0 1px #0061AF;
 }
 
-.switch_row input:checked ~ .slider:before {
+.mandatory_payment:checked ~ .postpaid_wrap .switch_row .switch .slider:before {
   -webkit-transform: translateX(22px);
   -ms-transform: translateX(22px);
   transform: translateX(22px);
@@ -768,19 +778,19 @@ body .select2-results__option {
   border-right: 1px solid #D7D8D9;
 }
 
-.iti__flag.iti__us {
-  height: 20px!important;
-  width: 20px!important;
-  border-radius: 50%!important;
-  background-size: cover;
-}
+// .iti__flag.iti__us {
+//   height: 20px!important;
+//   width: 20px!important;
+//   border-radius: 50%!important;
+//   background-size: cover;
+// }
 
-.iti__flag {
-  height: 20px!important;
-  width: 20px!important;
-  border-radius: 50%!important;
-  background-size: cover;
-}
+// .iti__flag {
+//   height: 20px!important;
+//   width: 20px!important;
+//   border-radius: 50%!important;
+//   background-size: cover;
+// }
 
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
   font-weight: 500;
@@ -793,7 +803,7 @@ body .select2-results__option {
 
 .iti__arrow {
   margin-right: 10px;
-  margin-left: 27px!important;
+  margin-left: 15px!important;
   width: 12px!important;
   height: 7px!important;
   background-image: url(../img/arrow_select.svg);
@@ -816,6 +826,10 @@ body .select2-results__option {
   padding: unset!important;
 }
 
+.iti--allow-dropdown input, .iti--allow-dropdown input[type="text"], .iti--allow-dropdown input[type="tel"], .iti--separate-dial-code input, .iti--separate-dial-code input[type="text"], .iti--separate-dial-code input[type="tel"] {
+  padding-left: 95px!important;
+}
+
 .create_shipment_page{
   .accordion-wrap{
     width: 65%;
@@ -827,7 +841,7 @@ body .select2-results__option {
   background: #F3F4F5;
   border: 1px solid #D7D8D9;
   border-radius: 8px;
-  padding: 12px 15px;
+  padding: 12px 31px 12px 15px;
   width: 100%;
   display: inline-block;
   position: relative;
@@ -933,9 +947,12 @@ body .select2-results__option {
 
 .delivery_method_flex{
   margin-bottom: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.delivery_method_object{
+  margin-right: 10px;
 }
 
 .bottom_button{

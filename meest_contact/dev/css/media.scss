@@ -271,6 +271,13 @@ body .select2-results__option {
   padding: 12px 23px;
   font-size: 14px;
 }
+
+.who_answer_object {
+  height: 50px;
+  .false-radio{
+  	top: 13px;
+  }
+}
 }
 
 @media (max-width: 500px){
@@ -292,5 +299,6 @@ body .select2-results__option {
 		font-size: 13px;
 	}
 }
+
 }
 

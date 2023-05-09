@@ -226,6 +226,12 @@
     padding: 12px 23px;
     font-size: 14px;
   }
+  .who_answer_object {
+    height: 50px;
+  }
+  .who_answer_object .false-radio {
+    top: 13px;
+  }
 }
 @media (max-width: 500px) {
   .contact-phones .flex-phones a {

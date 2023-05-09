@@ -15,9 +15,9 @@ $(".select").select2().change(function() {
 
 
 $('#fileUpload').change(function() {
-  var i = $(this).parents('.file-upload-form').find('.add-clone-text').clone();
+  var i = $(this).parents('.file-upload-form').find('.add-clone-text p').clone();
   var file = $('#fileUpload')[0].files[0].name;
-  $(this).parents('.file-upload-form').find('.add-clone-text').text(file);
+  $(this).parents('.file-upload-form').find('.add-clone-text p').text(file);
 });
 
 var uploadField = document.getElementById("fileUpload");
